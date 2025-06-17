@@ -1,0 +1,96 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --font-header: "AKONY, sans-serif";
+    --font-title: "inter, sans-serif";
+    --text: #ffffff;
+    --text-footer: rgb(164, 164, 164);
+    --bg-main: #0a0a0a;
+}
+
+* {
+    font-size: 18px;
+    color: var(--text);
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background-color: var(--bg-main);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+/* HEADER */
+
+.header-items {
+    padding: 10px 15px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(56, 56, 56);
+    border-radius: 0 0 10px 10px;
+}
+
+.header-items li {
+    padding: 0;
+    margin: 0;
+}
+
+.header-items a {
+    text-decoration: none;
+}
+
+.game-items {
+    display: flex;
+    gap: 15px;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 25px;
+}
+
+.title {
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+.topic {
+    margin: 25px 0 10px 0;
+    border-left: 2px solid rgb(215, 140, 0);
+    padding-left: 5px;
+}
+
+.main-content p {
+    margin-left: 10px;
+}
+
+.main-content em {
+    border-bottom: 1px solid #707070;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(56, 56, 56);
+    padding: 5px;
+    font-size: 0.8rem;
+    color: var(--text-footer);
+}
